@@ -1,0 +1,61 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+class assigment
+{
+    static void Main(string[] args)
+    {
+        String nm;
+        int e, h, c, t = 0, p = 0;
+
+        Console.Write("Enter student name :");
+        nm = Console.ReadLine();
+
+        Console.Write("Enter English marks:");
+        e = Convert.ToInt32(Console.ReadLine());
+
+        Console.Write("Enter Hindi marks:");
+        h = Convert.ToInt32(Console.ReadLine());
+
+        Console.Write("Enter Computer marks:");
+        c = Convert.ToInt32(Console.ReadLine());
+
+        t = e+h+c;
+        p = t / 3;
+
+
+        Console.WriteLine("English marks :" + e);
+        Console.WriteLine("Hindi marks :" + h);
+        Console.WriteLine("Computer marks :" +  c);
+        Console.WriteLine("Total marks :" + t);
+        Console.WriteLine("Percantage :" +  p);
+
+        if (p > 60)
+        {
+            if (p < 100)
+            {
+                Console.Write("First devision");
+            }
+        }
+
+        if (p > 35)
+        {
+            if (p < 70)
+            {
+                Console.Write("Secand devision");
+            }
+        }
+
+        if (p > 0)
+        {
+            if (p < 35)
+            {
+                Console.Write("FAIL");
+            }
+        }
+
+        Console.ReadKey();
+    }
+}
