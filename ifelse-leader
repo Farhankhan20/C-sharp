@@ -1,0 +1,52 @@
+using System;
+using System.Collections.Generic;
+using System.ComponentModel.Design;
+using System.Linq;
+using System.Text;
+
+class assigment
+{
+    static void Main(string[] args)
+    {
+        char ch;
+        Console.Write("Enter charecter :");
+        ch = Convert.ToChar(Console.ReadLine());
+
+        if (ch == 'a')
+        {
+            Console.Write("its vowel");
+        }
+
+        else if (ch == 'e')
+        {
+            Console.Write("its vowel");
+
+        }
+
+        else if (ch == 'i')
+        {
+            Console.Write("its vowel");
+
+        }
+
+        else if (ch == 'O')
+        {
+            Console.Write("its vowel");
+
+        }
+
+        else if (ch == 'u') 
+        {
+            Console.Write("its vowl");
+        }
+
+       else
+        {
+            Console.Write("its consolant");
+        }
+
+
+
+
+    }
+}
