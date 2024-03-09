@@ -1,0 +1,19 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+class prog
+{
+    static void Main(string[] args)
+    {
+        int i;
+        i = 20;
+        while (i <= 1)
+        {
+            Console.WriteLine(i);
+            i++;
+        }
+        Console.ReadKey();
+    }
+}
