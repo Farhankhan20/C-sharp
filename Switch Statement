@@ -1,0 +1,49 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+class assigment
+{
+    static void Main(string[] args)
+    {
+        int n1, n2, s = 0, m = 0, u = 0;
+        Char ch;
+
+        Console.Write("Enter no one:");
+        n1 = Convert.ToInt32(Console.ReadLine());
+
+        Console.Write("Enter  second no:");
+        n2 = Convert.ToInt32(Console.ReadLine());
+
+        Console.Write("Enter your choice:");
+        ch = Convert.ToChar(Console.ReadLine());
+
+        switch (Char.ToLower(ch))
+        {
+            case 's':
+                s = n1 + n2;
+                Console.Write("the sum of this no is:" + s);
+                break;
+
+            case 'm':
+                m = n1 * n2;
+                Console.Write("Multiplecation of this no is :" +  m);
+                break;
+
+            case 'u':
+                u = n1 - n2;
+                Console.Write("substraction of this no is :" +  u);
+                break;
+
+            default:
+                Console.Write("Wrong choice");
+
+                break;
+                
+        }
+
+        Console.ReadKey();
+
+    }
+}
