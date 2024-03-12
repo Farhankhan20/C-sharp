@@ -1,0 +1,36 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+class program
+{
+    static void Main(string[] args)
+    {
+        string[]nm = new string[3];
+        string[]ad = new string[3];
+        int[]ag = new int[3];
+        int i;
+
+        for (i = 0; i < 3; i++)
+        {
+            Console.Write("\n Enter name:", i);
+            nm[i] = Console.ReadLine();
+            Console.Write("\n Enter address :",i);
+            ad[i] = Console.ReadLine();
+            Console.Write("\n Enter age :", i);
+            ag[i] = Convert.ToInt32(Console.ReadLine());
+
+        }
+
+        for(i = 0; i < 3;i++)
+        {
+            Console.Write("\n Name is :" + nm[i], i);
+            Console.Write("\n Address is :" + ad[i], i);
+            Console.Write("\n Age is :" + ag[i], i);
+
+        }
+        Console.Write("\n");
+        Console.ReadKey();
+    }
+}
